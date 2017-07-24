@@ -1,0 +1,12 @@
+<launch>
+
+        <!-- Load Parameters -->
+        <rosparam command = "load" file= "$(find performance_tests)/parameters.yaml" />
+		
+		<!-- Publisher node -->
+        <node pkg="performance_tests" type="pytalker.py" name="pytalker" output="screen"/>
+
+        <!-- Subscriber node -->
+        <node pkg="performance_tests" name="pylistener" type="pylistener.py" output="screen"/>
+
+</launch>
