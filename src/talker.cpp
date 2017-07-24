@@ -28,6 +28,15 @@ int main(int argc, char *argv[])
     std::stringstream ss;
 
     ss << "Blue ocean robotics is awesome" << count;
+    /*
+    ss << "It is our vision to be the lead partner \n"
+    		"in creating and commercializing robots for end-users, \n"
+    		 "and robotic communities – worldwide. It inspires us. \n"
+    		 "It motivates us – to be at the forefront of the robot \n"
+    		 "technological development as we create robots that improve \n"
+    		 "quality-of-life, working environments and productivity" << count;
+
+    */
 
   	msg.super_awesome_string = ss.str();
     // publish messgae
